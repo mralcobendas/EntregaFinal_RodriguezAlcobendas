@@ -1,0 +1,138 @@
+#destacada img{
+    width:100%;
+    position:relative;
+    margin-bottom:100px
+}
+
+#que-es img{
+    width:160px;
+    display:flex; 
+    margin:auto
+}
+
+@keyframes animacionOlla{
+    from{transform:rotate(0)}
+    to{transform:rotate(-10deg)}
+}
+
+.animation{
+    animation-name: animacionOlla;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.grilla{
+    display:flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    padding:40px 40px 0;
+    figure{
+        width:30%;
+        margin-bottom: 30px;
+        img{
+            display: block;
+            margin:auto;
+            width:100%
+        }
+        figcaption{
+            font-size:$txMd;
+            text-align:center;
+            margin-top: 15px;
+        }
+    }
+}
+
+
+//Bio
+
+#bio{
+    display: grid;
+    grid-template-columns: 2fr auto;
+    grid-column-gap:50px;
+    max-width:1000px;
+    margin:0 auto 100px;
+    margin:30px auto 100px;
+    img{
+        width:300px;
+        height:300px;
+        border-radius: 50%;
+    }
+}
+
+
+
+// Archivo de recetas
+
+#grid-archivo{
+    padding-left:40px;
+    padding-right:40px
+}
+
+.row{
+    row-gap:30px
+}
+
+.card{
+    border:none;
+    border-radius: unset;
+}
+
+.card-body figcaption{
+    font-size:$txMd;
+    text-align:center;
+    margin-top: 15px;
+}
+
+
+//Receta
+
+.receta{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-column-gap:20px;
+    grid-row-gap:60px;
+    margin-bottom:60px;
+    grid-template-areas: 
+    "head head head head head"
+    ". ingredientes pasos pasos ."
+    "ver ver ver ver ver"; 
+}
+
+.head-receta{
+    grid-area: head;
+    img{
+        width:100%;
+        height:auto;
+        margin-top:20px
+    }
+}
+
+
+.ingredientes{
+    grid-area:ingredientes
+}
+
+.pasos {
+    grid-area: pasos;
+}
+
+.ver-mas{
+    grid-area:ver
+}
+
+
+.pasos h4, .ingredientes h4{
+    text-transform:uppercase;
+    font-weight:$txBold;
+    font-size:$txMd;
+    margin-bottom:20px; 
+}
+
+
+.receta ul, ol{
+    font-weight:$txRegular;
+    font-size:$txMd;
+    padding:0 0 0 15px;
+    line-height:1.3
+}

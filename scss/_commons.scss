@@ -1,0 +1,89 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+a{
+    text-decoration: none;
+    color:$black
+}
+
+
+p{
+    font-family: $mainFont;
+    color:$black;
+    max-width:$mdBox;
+    font-size: $txMd;
+    font-weight: $txRegular;
+    margin:auto;
+    line-height:1.5
+}
+
+
+h1{
+    position:absolute;
+    font-size:$txLg;
+    top:100%;
+    left:40%;
+    background-color: rgba(255,255,255,0.3);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:fit-content;
+    padding: 20px 40px;
+    margin:auto;
+    transform:translateY(-53vh);
+    color:$black
+}
+
+
+h2{
+    font-family: $displayFont;
+    font-size:$txXl;
+    margin: 10px auto;
+    text-align: center;
+}
+
+
+.boton{
+    font-size:$txSm;
+    font-weight: $txBold;
+    text-transform:uppercase;
+    border: 1px solid $black;
+    width: max-content;
+    padding: 6px 20px;
+    text-align: center;
+    border-radius: 35px;
+    margin:30px auto;
+    display: flex;
+    background-color: transparent;
+    &:hover{
+        background-color: $black;
+        color:$white;
+    }
+}
+
+
+
+.bk-gris{
+    background-color: $gray;
+    padding: 40px 0;
+    margin-top: 80px;
+}
+
+.bk-black{
+    background-color: $black;
+    color: #fff;
+    padding: 100px 0 30px;
+}
+
+.bk-yellow{
+    background-color:$mainColor;
+    padding: 40px 0 60px;
+
+}
+
+

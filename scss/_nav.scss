@@ -1,0 +1,32 @@
+
+header{
+    padding: 61px;
+    display: flex;
+    justify-content: center;
+    img{
+        width: $mdBox
+    }
+}
+
+.nav-link{
+    font-size:$txSm
+}
+
+.botonera{
+    padding: 0;
+    .bk-yellow{
+        padding:30px;
+        border-top:10px solid $black;
+        border-bottom:10px solid $black; 
+    }
+}
+
+#placeholder{
+    height:700px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+

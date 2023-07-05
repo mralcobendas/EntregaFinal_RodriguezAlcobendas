@@ -1,0 +1,179 @@
+// Buscador de la nav
+
+.form-control{
+    font-size:$txSm;
+    font-weight: $txBold;
+    height:40px;
+    width: max-content;
+    padding: 6px 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin:30px auto;
+    display: flex;
+    border: 1px solid $gray
+}
+
+.btn{
+    font-size:$txSm;
+    font-weight: $txBold;
+    text-transform:uppercase;
+    width: max-content;
+    padding: 6px 20px;
+    text-align: center;
+    border-radius: 35px;
+    margin:30px auto;
+    display: flex;
+    background-color: transparent;
+    color:$black;
+    border:1px solid $black;
+    &:hover{
+        background-color: $black;
+        color:$white;
+        cursor: pointer;
+        transform:scale(0.8);
+        transition:transform 1s
+    }
+}
+
+.btn-dark{
+    @extend .btn;
+    background-color: $black;
+    color:$white;
+    &:hover{
+        background-color: transparent;
+        color:$black;
+    }
+   
+}
+
+
+
+// Formulario del archivo
+
+form#buscador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:50px auto
+}
+
+#buscador label{
+    font-size: $txSm;
+    text-transform: uppercase;
+    margin-right:10px
+}
+
+#buscador input#nombre{
+    margin-right:40px
+}
+
+#buscador input{
+    border:none;
+    height:30px;
+    width:220px
+}
+
+
+input#busqueda{
+    border: 1px solid $gray
+}
+
+#buscador input[type=submit]{
+    margin-left:30px
+}
+
+
+
+//Formulario del consultorio
+
+form#consulta{
+    display:flex;
+    gap:50px;
+    margin:70px auto 100px;
+    max-width:1000px;
+}
+
+#mis-datos, #mensaje{
+    display: flex;
+    flex-direction:column
+}
+
+#mis datos{
+    width:500px
+}
+
+#mensaje{
+    width:700px
+}
+
+#consulta input{
+    border: 1px solid #ccc;
+    margin-top:20px;
+    height:30px;
+    width:250px
+}
+
+#consulta label{
+    font-size: $txSm;
+    text-transform: uppercase;
+    margin-right:10px
+}
+
+#message{
+    border: 1px solid #ccc;
+    width:600px;
+    height:350px
+}
+
+#mensaje input[type=submit]{
+    background-color: $black;
+    width:fit-content;
+    font-size: $txSm;
+    text-transform: uppercase;
+    color:$white;
+    padding: 6px 20px;
+    border-radius:30px;
+    margin-left:86%
+}
+
+
+// Formulario para suscribirse del footer
+
+form#subscribe{
+    display: flex;
+    justify-content: center;
+}
+
+#subscribe label{
+    font-size: $txSm;
+    text-transform: uppercase;
+    margin-right:10px
+}
+
+#subscribe input#nombre{
+    margin-right:40px
+}
+
+#subscribe input{
+    border:none;
+    height:30px;
+    width:220px
+}
+
+#subscribe input[type=submit]{
+    background-color:$black;
+    width:fit-content;
+    font-size: $txSm;
+    text-transform: uppercase;
+    color:$white;
+    padding: 2px 20px;
+    border-radius:30px;
+    margin-left:30px;
+    &:hover{
+        background-color: transparent;
+        color:$black;
+        border: 1px solid $black
+    }
+}
+
+
