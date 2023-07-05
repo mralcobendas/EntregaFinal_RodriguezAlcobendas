@@ -1,0 +1,10 @@
+@keyframes animacionOlla{
+    from{transform:rotate(0)}
+    to{transform:rotate(-10deg)}
+}
+
+.animation{
+    animation-name: animacionOlla;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}

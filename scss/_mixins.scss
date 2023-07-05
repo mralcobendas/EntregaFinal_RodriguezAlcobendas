@@ -1,0 +1,11 @@
+@mixin flex ($dire, $justify, $align){
+    display:flex;
+    flex-direction: $dire;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+.is-flex{
+    @include flex(row,center,center)
+}

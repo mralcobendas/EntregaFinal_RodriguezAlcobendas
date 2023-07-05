@@ -51,9 +51,6 @@
 // Formulario del archivo
 
 form#buscador{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin:50px auto
 }
 
@@ -139,10 +136,6 @@ form#consulta{
 
 // Formulario para suscribirse del footer
 
-form#subscribe{
-    display: flex;
-    justify-content: center;
-}
 
 #subscribe label{
     font-size: $txSm;

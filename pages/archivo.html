@@ -44,7 +44,7 @@
     <main>
         <h2>Archivo de recetas</h2>
         <section>
-            <form id="buscador" action="buscar.php">
+            <form id="buscador" action="buscar.php" class="is-flex">
                 <div id="buscar-receta">
                     <label for="busqueda">¿Qué querés comer?</label>
                     <input type="text" id="busqueda"> 
@@ -182,14 +182,26 @@
 
             </div>
 
+        </section>
 
 
-
-
-
-
+        <section class="bk-yellow">
+            <h2>Suscribite</h2>
+            <form id="subscribe" action="envio.php" class="is-flex">
+                <div class="campo-1">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre"> 
+                </div>
+                <div class="campo-2">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="enviar">
+                    <input type="submit" value="Enviar">
+                </div>
 
         </section>
+        
 
     </main>
 
