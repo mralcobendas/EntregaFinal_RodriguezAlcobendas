@@ -109,6 +109,10 @@ header img {
   margin-bottom: 50px;
 }
 
+#botonera-home {
+  margin-bottom: 0px;
+}
+
 #placeholder {
   height: 700px;
   display: flex;

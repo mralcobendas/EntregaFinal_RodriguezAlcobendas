@@ -13,7 +13,7 @@ header{
 }
 
 .botonera{
-    padding: 0;
+    padding: 0;   
     .bk-yellow{
         padding:30px;
         border-top:10px solid $black;
@@ -21,6 +21,11 @@ header{
         margin-bottom:50px;
     }
 }
+
+#botonera-home{
+    margin-bottom:0px
+}
+
 
 #placeholder{
     height:700px;
