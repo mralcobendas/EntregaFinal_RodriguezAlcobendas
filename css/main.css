@@ -106,6 +106,7 @@ header img {
   padding: 30px;
   border-top: 10px solid #2d2c2c;
   border-bottom: 10px solid #2d2c2c;
+  margin-bottom: 50px;
 }
 
 #placeholder {
@@ -125,6 +126,7 @@ header img {
   border-radius: 5px;
   margin: 30px auto;
   display: flex;
+  align-items: center;
   border: 1px solid rgb(242, 242, 239);
 }
 
@@ -133,14 +135,14 @@ header img {
   font-weight: 400;
   text-transform: uppercase;
   width: max-content;
+  height: 43px;
   padding: 6px 20px;
   text-align: center;
   border-radius: 35px;
-  margin: 30px auto;
   display: flex;
+  align-items: center;
   background-color: transparent;
   color: #2d2c2c;
-  border: 1px solid #2d2c2c;
 }
 .btn:hover, .btn-dark:hover {
   background-color: #2d2c2c;
@@ -148,15 +150,22 @@ header img {
   cursor: pointer;
   transform: scale(0.8);
   transition: transform 1s;
+  border: 1px solid #2d2c2c;
 }
 
 .btn-dark {
   background-color: #2d2c2c;
   color: #f5f5f5;
+  border: 1px solid #2d2c2c;
 }
 .btn-dark:hover {
   background-color: transparent;
   color: #2d2c2c;
+}
+
+.searcher {
+  display: flex;
+  align-items: center;
 }
 
 form#buscador {
@@ -176,16 +185,21 @@ form#buscador {
 
 #buscador input {
   border: none;
-  height: 30px;
+  height: 43px;
   width: 220px;
 }
 
 input#busqueda {
-  border: 1px solid rgb(242, 242, 239);
+  border: 1px solid #2d2c2c;
+  border-radius: 5px;
 }
 
 #buscador input[type=submit] {
   margin-left: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
 }
 
 .buscar {
@@ -227,13 +241,14 @@ form#consulta {
 
 #message {
   border: 1px solid #ccc;
-  width: 600px;
+  width: 100%;
   height: 350px;
 }
 
 #mensaje input[type=submit] {
   background-color: #2d2c2c;
   width: fit-content;
+  height: 43px;
   font-size: 1.2rem;
   text-transform: uppercase;
   color: #f5f5f5;
@@ -347,7 +362,7 @@ form#consulta {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto auto auto;
-  grid-column-gap: 20px;
+  grid-column-gap: 40px;
   grid-row-gap: 60px;
   margin-bottom: 60px;
   grid-template-areas: "head head head head head" ". ingredientes pasos pasos ." "ver ver ver ver ver";
