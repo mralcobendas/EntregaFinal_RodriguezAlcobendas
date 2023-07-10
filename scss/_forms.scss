@@ -51,8 +51,10 @@
 // Formulario del archivo
 
 form#buscador{
-    margin:50px auto
+    margin:50px auto; 
+    align-items:center
 }
+
 
 #buscador label{
     font-size: $txSm;
@@ -79,7 +81,9 @@ input#busqueda{
     margin-left:30px
 }
 
-
+.buscar{
+    align-items:center
+}
 
 //Formulario del consultorio
 
@@ -149,13 +153,14 @@ form#consulta{
 
 #subscribe input{
     border:none;
-    height:30px;
+    height:43px;
     width:220px
 }
 
 #subscribe input[type=submit]{
     background-color:$black;
     width:fit-content;
+    height:43px;
     font-size: $txSm;
     text-transform: uppercase;
     color:$white;
