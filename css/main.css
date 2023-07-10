@@ -40,7 +40,7 @@ h1 {
   width: fit-content;
   padding: 20px 40px;
   margin: auto;
-  transform: translateY(-53vh);
+  transform: translateY(-64vh);
   color: #2d2c2c;
 }
 
@@ -444,8 +444,11 @@ footer svg {
 
 @media (width < 480px) {
   /* index */
+  .navbar .container-fluid {
+    justify-content: center;
+  }
   .botonera img {
-    width: 250px;
+    width: 100%;
   }
   .botonera .bk-yellow {
     padding: 10px;
@@ -458,34 +461,37 @@ footer svg {
   .botonera .btn-dark {
     margin-top: 15px;
   }
+  .ms-5 {
+    margin-left: 0 !important;
+  }
+  .me-2 {
+    margin-right: 0 !important;
+  }
+  .nav-link {
+    text-align: center;
+  }
+  .carousel {
+    display: none;
+  }
   .form-control {
     margin-bottom: 0;
   }
-  #destacada img {
-    margin-bottom: 0;
-  }
-  #destacada h1 {
-    position: relative;
-    opacity: 1;
-    top: unset;
-    left: unset;
-    height: auto;
-    margin-top: 15px;
-    font-size: 1.5rem;
-    margin-bottom: 60px;
-  }
   #que-es img {
     width: 80px;
+    margin-top: 30px;
+  }
+  .animation {
+    animation-name: unset;
   }
   h2 {
-    font-size: 4rem;
+    font-size: 2.5rem;
     line-height: 1;
     max-width: 80%;
     margin-bottom: 15px;
   }
   #que-es p {
     max-width: 90%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
   }
   .grilla {
@@ -518,9 +524,11 @@ footer svg {
   header.bk-yellow {
     margin-top: 0;
   }
-  .bk-black {
-    padding: 50px 0 20px img;
-    padding-width: 60%;
+  footer.bk-black {
+    padding: 50px 0 20px;
+  }
+  footer.bk-black img {
+    width: 60%;
   }
   /* archivo */
   form#buscador {
@@ -537,6 +545,9 @@ footer svg {
   }
   #buscador input[type=submit] {
     margin: 15px auto;
+  }
+  #grid-archivo {
+    padding: 0;
   }
   /* consultorio */
   form#consulta {
@@ -568,6 +579,9 @@ footer svg {
   .pasos h4, .ingredientes h4 {
     margin-top: 40px;
   }
+  .receta ul, ol {
+    font-size: 1.2rem;
+  }
   /* sobre mi */
   #bio {
     display: flex;
@@ -582,8 +596,8 @@ footer svg {
     margin-bottom: 20px;
   }
   #bio p {
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 1.2rem;
+    text-align: left;
   }
 }
 

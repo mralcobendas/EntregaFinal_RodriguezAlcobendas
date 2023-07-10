@@ -4,8 +4,12 @@
 
     /* index */
    
+    .navbar .container-fluid{
+        justify-content:center
+    }
+
     .botonera img{
-        width:250px
+        width:100%
     }
 
     .botonera .bk-yellow{
@@ -15,38 +19,45 @@
     
     .d-flex{
         flex-direction:column;
-        margin:auto
+        margin:auto;
     }
 
     .botonera .btn-dark{
         margin-top:15px
     }
 
+    .ms-5{
+        margin-left:0!important
+    }
+
+    .me-2{
+        margin-right:0!important
+    }
+
+    .nav-link {
+        text-align:center;
+    }
+
+    .carousel{
+        display:none
+    }
+
     .form-control{
         margin-bottom:0
     }
 
-    #destacada img{
-        margin-bottom:0
-    }
-
-    #destacada h1{
-        position:relative;
-        opacity:1;
-        top:unset;
-        left:unset;
-        height: auto;
-        margin-top:15px;
-        font-size:$txMd;
-        margin-bottom:60px
-    }
 
     #que-es img {
-        width:80px
+        width:80px;
+        margin-top:30px
+    }
+
+    .animation{
+        animation-name:unset
     }
 
    h2{
-        font-size:$txXl;
+        font-size:$txLg;
         line-height:1;
         max-width:80%;
         margin-bottom:15px
@@ -54,7 +65,7 @@
 
     #que-es p{
         max-width:90%;
-        font-size:$txMd;
+        font-size:$txSm;
         text-align:center
     }
 
@@ -96,14 +107,13 @@
         margin-top:0
     }
 
-    .bk-black{
+    footer.bk-black{
         padding:50px 0 20px
-        img{
-            width:60%
-        }
     }
 
-   
+    footer.bk-black img{
+        width:60%
+    }
 
     /* archivo */
 
@@ -124,6 +134,10 @@
 
     #buscador input[type=submit]{
         margin: 15px auto
+    }
+
+    #grid-archivo{
+        padding:0
     }
 
 
@@ -167,6 +181,11 @@
         margin-top:40px
     }
 
+    .receta ul, ol{
+        font-size:$txSm;
+    }        
+    
+
 
     /* sobre mi */
     
@@ -182,8 +201,8 @@
             margin-bottom:20px
         }
         p{
-        font-size:$txMd;
-        text-align:center
+        font-size:$txSm;
+        text-align:left
         }
     }
 }
