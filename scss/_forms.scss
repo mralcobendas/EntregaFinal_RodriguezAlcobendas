@@ -1,5 +1,6 @@
 // Buscador de la nav
 
+
 .form-control{
     font-size:$txSm;
     font-weight: $txBold;
@@ -10,7 +11,8 @@
     border-radius: 5px;
     margin:30px auto;
     display: flex;
-    border: 1px solid $gray
+    align-items:center;
+    border: 1px solid $gray;
 }
 
 .btn{
@@ -18,20 +20,21 @@
     font-weight: $txBold;
     text-transform:uppercase;
     width: max-content;
+    height:43px;
     padding: 6px 20px;
     text-align: center;
     border-radius: 35px;
-    margin:30px auto;
     display: flex;
+    align-items:center;
     background-color: transparent;
     color:$black;
-    border:1px solid $black;
     &:hover{
         background-color: $black;
         color:$white;
         cursor: pointer;
         transform:scale(0.8);
-        transition:transform 1s
+        transition:transform 1s;
+        border:1px solid $black;
     }
 }
 
@@ -39,13 +42,19 @@
     @extend .btn;
     background-color: $black;
     color:$white;
+    border:1px solid $black;
     &:hover{
         background-color: transparent;
         color:$black;
+        
     }
    
 }
 
+.searcher{
+    display:flex;
+    align-items:center
+}
 
 
 // Formulario del archivo
@@ -66,17 +75,22 @@ form#buscador{
 
 #buscador input{
     border:none;
-    height:30px;
+    height:43px;
     width:220px
 }
 
 
 input#busqueda{
-    border: 1px solid $gray
+    border: 1px solid $black;
+    border-radius:5px
 }
 
 #buscador input[type=submit]{
-    margin-left:30px
+    margin-left:30px; 
+    text-align:center;
+    display:flex;
+    justify-content: center;
+    width: fit-content;
 }
 
 
@@ -118,13 +132,14 @@ form#consulta{
 
 #message{
     border: 1px solid #ccc;
-    width:600px;
+    width:100%;
     height:350px
 }
 
 #mensaje input[type=submit]{
     background-color: $black;
     width:fit-content;
+    height:43px;
     font-size: $txSm;
     text-transform: uppercase;
     color:$white;
@@ -156,6 +171,7 @@ form#consulta{
 #subscribe input[type=submit]{
     background-color:$black;
     width:fit-content;
+    height:43px;
     font-size: $txSm;
     text-transform: uppercase;
     color:$white;
