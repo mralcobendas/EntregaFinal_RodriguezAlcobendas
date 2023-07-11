@@ -206,3 +206,17 @@
         }
     }
 }
+
+/* Error */
+
+.error{
+    h2{
+        font-size:$txLg
+    }
+    p{
+        font-size:$txSm
+    }
+    img{
+        width:40vw
+    }
+}

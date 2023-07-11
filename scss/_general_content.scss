@@ -99,7 +99,6 @@
     }
 }
 
-
 .ingredientes{
     grid-area:ingredientes
 }
@@ -126,4 +125,16 @@
     font-size:$txMd;
     padding:0 0 0 15px;
     line-height:1.3
+}
+
+
+// Error
+
+.error{
+    background-color: $mainColor;
+    height:100vh;
+    flex-direction: column;
+    img{
+        width:10vw
+    }
 }

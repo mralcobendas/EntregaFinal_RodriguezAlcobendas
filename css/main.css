@@ -407,6 +407,15 @@ form#consulta {
   line-height: 1.3;
 }
 
+.error {
+  background-color: rgb(255, 221, 1);
+  height: 100vh;
+  flex-direction: column;
+}
+.error img {
+  width: 10vw;
+}
+
 @keyframes animacionOlla {
   from {
     transform: rotate(0);
@@ -599,6 +608,16 @@ footer svg {
     font-size: 1.2rem;
     text-align: left;
   }
+}
+/* Error */
+.error h2 {
+  font-size: 2.5rem;
+}
+.error p {
+  font-size: 1.2rem;
+}
+.error img {
+  width: 40vw;
 }
 
 /*# sourceMappingURL=main.css.map */
