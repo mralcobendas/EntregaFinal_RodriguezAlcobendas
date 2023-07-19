@@ -49,6 +49,20 @@
     }
 }
 
+.textual{
+    font-family: $displayFont;
+    font-size: $txLg;
+    line-height:1.1;
+    margin-top:50px
+}
+
+.nombre{
+    font-weight: 200;
+    text-transform:uppercase;
+    font-size: $txSm;
+    margin-top:15px
+}
+
 
 
 // Archivo de recetas
