@@ -205,18 +205,23 @@
         text-align:left
         }
     }
-}
 
 /* Error */
 
-.error{
-    h2{
+    .error{
+         h2{
         font-size:$txLg
-    }
-    p{
+        }
+        p{
         font-size:$txSm
+        }
+        img{
+            width:40vw
+        }
     }
-    img{
-        width:40vw
-    }
+
 }
+
+
+
+
