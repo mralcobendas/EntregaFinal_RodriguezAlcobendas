@@ -23,12 +23,12 @@ p{
 }
 
 
-h1{
+.carousel-caption figcaption{
     position:absolute;
-    font-size:$txLg;
+    font-size:$txXl;
     top:100%;
     left:40%;
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(21, 21, 21, 0.3);
     display:flex;
     justify-content: center;
     align-items: center;
@@ -36,12 +36,12 @@ h1{
     padding: 20px 40px;
     margin:auto;
     transform:translateY(-64vh);
-    color:$black;
+    color:$white;
     font-family: $displayFont;
 }
 
 
-h2{
+h1, h2{
     font-family: $displayFont;
     font-size:$txXl;
     margin: 10px auto;
