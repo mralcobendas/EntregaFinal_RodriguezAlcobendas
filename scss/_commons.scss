@@ -23,24 +23,6 @@ p{
 }
 
 
-.carousel-caption figcaption{
-    position:absolute;
-    font-size:$txXl;
-    top:100%;
-    left:40%;
-    background-color: rgba(21, 21, 21, 0.3);
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width:fit-content;
-    padding: 20px 40px;
-    margin:auto;
-    transform:translateY(-64vh);
-    color:$white;
-    font-family: $displayFont;
-}
-
-
 h1, h2{
     font-family: $displayFont;
     font-size:$txXl;

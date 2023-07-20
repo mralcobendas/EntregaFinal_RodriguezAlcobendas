@@ -4,6 +4,28 @@
     margin-bottom:100px
 }
 
+.carousel-caption figcaption{
+    position:absolute;
+    font-size:$txXl;
+    top:100%;
+    left:40%;
+    background-color: rgba(21, 21, 21, 0.3);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:fit-content;
+    padding: 5px 40px;
+    margin:auto;
+    transform:translateY(-64vh);
+    color:$white;
+    font-family: $displayFont;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    width:5rem;
+    height:5rem
+}
+
 #que-es img{
     width:160px;
     display:flex; 
