@@ -1,12 +1,79 @@
+@media (width < 769px){
+
+    /* index */
+   
+    .carousel-caption figcaption{
+        font-size: 3rem;
+        left:22%;
+        transform: translateY(-27vh);
+    }
+
+    .grilla {
+        padding: 40px 20px 0
+    }
+
+    form#subscribe{
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .campo-1, .campo-2{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #subscribe label, #subscribe input#nombre {
+        margin:10px 0;
+    }
+
+    #subscribe input[type=submit]{
+        margin:20px 0;
+    }
+
+/* receta chipá guazú */
+
+.receta {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:         
+    "head head head"
+    "ingredientes pasos pasos"
+    "ver ver ver";
+    padding:0 40px
+}
 
 
-@media (width < 480px){
+/* sobre mi */
+
+#bio{
+    padding:0 40px
+}
+
+
+/* consultorio */
+
+form#consulta{
+    padding:0 40px
+}
+
+#mensaje input[type=submit] {
+    margin-left:71%
+}
+
+}
+
+
+@media (width < 481px){
 
     /* index */
    
     .navbar .container-fluid{
+        flex-direction:column;
         justify-content:center
     }
+   
 
     .botonera img{
         width:100%
@@ -57,8 +124,9 @@
     }
 
     h1{
-        font-size: $txXl;
+        font-size: $txLg;
         line-height:1;
+        max-width:90%
     }
 
     h2{
@@ -150,7 +218,8 @@
 
     form#consulta{
         flex-direction: column;
-        gap:0
+        gap:0;
+        padding:0
     }
     
     #consulta label {
@@ -179,7 +248,8 @@
     .receta{
         display: block;
         width:90%;
-        margin:auto
+        margin:auto;
+        padding:0
     }
 
     .pasos h4, .ingredientes h4{
@@ -200,6 +270,7 @@
         align-items: center;
         width:90%;
         margin: auto;
+        padding:0;
         img{
             width:150px;
             height:150px;
