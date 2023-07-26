@@ -10,7 +10,7 @@
     position:absolute;
     font-size:$txXl;
     top:100%;
-    left:40%;
+    left:35%;
     background-color: rgba(21, 21, 21, 0.3);
     display:flex;
     justify-content: center;
@@ -104,6 +104,9 @@
 .card{
     border:none;
     border-radius: unset;
+    img{
+        border-radius:  0;
+    }
 }
 
 .card-body figcaption{
